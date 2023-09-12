@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator in javaScript Mini Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="table">
+           <form name="display" autocomplete="off">
+            <table>
+                <!-- <caption style="font-family: sans-serif; font-weight: 600">JavaScript Base calculator</caption> -->
+                <thead>
+                    <tr>
+                        <th colspan="4"><input type="tel" placeholder="0" name="col" style="padding: 10px ;font-size: 16px; outline: none; border-radius: 5px; text-align: right;"></th>
+                    </tr>
+                </thead>
+                <tbody> <tr>
+                    <td><button type="button" onclick="document.display.col.value = ''">C</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '0'">0</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '/'">/</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '+'">+</button></td>
+                </tr>
+                    <tr>
+                        <td><button type="button" onclick="document.display.col.value += '7'">7</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '8'">8</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '9'">9</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '*'">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="document.display.col.value += '4'">4</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '5'">5</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '6'">6</button></td>
+                        <td><button type="button" onclick="document.display.col.value += '-'">-</button></td>
+                    </tr>
+                    <tr>
+                            <td><button type="button" onclick="document.display.col.value += '1'">1</button></td>
+                            <td><button type="button" onclick="document.display.col.value += '2'">2</button></td>
+                            <td><button type="button" onclick="document.display.col.value += '3'">3</button></td>
+                        <td><button  type="button" onclick="document.display.col.value = eval(display.col.value)">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+           </form>
+        </div>
+    </div>
+</body>
+</html>
